@@ -1,5 +1,26 @@
 body{
     border: 1px solid red;
     margin: 0px auto;
+    /*padding: 3%;*/
     max-width: 1024px;
+    font-family: sans-serif;
+    font-size: 16px;/*1em*/
+
+
+
+}
+
+header{
+    background: #D1E3EE;
+
+}
+
+#logo{
+    margin-top: -150px;
+}
+
+header nav ul li{
+
+    border: 1px solid red;
+    display: inline-block;/*Por defecto rompe el modelo de caja y deja de ser una lista*/
 }
