@@ -1,5 +1,73 @@
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0px auto;/*Centrar*/
+    max-width: 1078px;/*Requerimiento del cliente*/
+    min-width: 1078px;
+}
+
+header nav{
+    margin-left: 220px;
+    
+    
+}
+
+header nav ul li{
+    color: gray;
+    
+    display: inline-block;
+    font-size: 1.8em;
+    margin-right: 15px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid gray;
+}
+
+header input{
+    float:right;
+    margin-top: 15px;
+    margin-right: -200px;
+}
+
+#paint{
+    float: right;
+}
+
+#granthams{
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+#primerseccion{
+    margin-top: 60px;
+}
+
+#primerseccion article{
+    margin-top: 60px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+#secc01art01{
+    width:61%;
+    margin-left: 30px;
+}
+
+
+
+#secc01art02{
+    width:30%;
+    margin-left: 50px;
+}
+
+#bg_offer{
+    top: -410px;
+    left: -35px;
+    position: relative;
+}
+
 .letragrande{
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 .letramediana{
@@ -11,7 +79,7 @@
 }
 
 .colorrosa{
-    color:pink;
+    color: #FF0099;
 }
 
 .colorverde{
