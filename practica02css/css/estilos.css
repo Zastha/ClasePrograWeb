@@ -38,13 +38,16 @@ header input{
 }
 
 #primerseccion{
+    height: 318px;
     margin-top: 60px;
+    
 }
 
 #primerseccion article{
-    margin-top: 60px;
+ 
     display: inline-block;
     vertical-align: top;
+
     
 }
 
@@ -71,7 +74,7 @@ header input{
 }
 
 .letramediana{
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .nito{
@@ -79,14 +82,60 @@ header input{
     
 }
 
+#secc01art02 ul{
+    list-style: none;
+    margin-left: -40px;
+
+}
+
+#secc01art02 ul li::before{
+    content: "•  ";
+    color:#FF0099
+    
+
+}
+
+#segundaseccion article{
+    text-align: right;
+    padding-right: 130px  ;
+}
+
+#terceraseccion article{
+    width:23%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 8px;
+    
+}
+
+#terceraseccion article img{
+    vertical-align: middle;
+    
+}
+
+#terceraseccion article input{
+    border-radius: 5px;
+
+}
+
+#terceraseccion article input[type="button"]{
+    background-color: #8bc500;
+    color:white;
+    
+}
+
+#secc03art04{
+    padding-top: 60px;
+}
+
 .colorrosa{
     color: #FF0099;
 }
 
 .colorverde{
-    color:greenyellow;
+    color: #8bc500;
 }
 
 .colorazul{
-    color:aqua;
+    color:#4267b3;
 }
