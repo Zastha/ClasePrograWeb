@@ -28,6 +28,45 @@ header input{
     margin-right: -200px;
 }
 
+footer{
+    background-color: #4267b3;
+    padding-left: 2%;
+}
+
+footer article{
+    display: inline-block;
+    margin-right: 50px;
+    
+}
+
+
+footer article p{
+    color: white;
+    font-size: 0.8em;
+  
+}
+
+footer article input[type="submit"]{
+    color: white;
+    background-color: #4267b3;
+    border-color: white;
+    border-radius: 10px;
+    border-width: 2px;
+    margin-left: 110px ;
+    
+    
+
+}
+
+#footerart02{
+    text-align: center;
+}
+
+#footerart03 img{
+    position: relative;
+}
+
+
 #paint{
     float: right;
 }
@@ -67,6 +106,24 @@ header input{
     top: -410px;
     left: -35px;
     position: relative;
+}
+
+#social{
+    top:-95px;
+    position: relative;
+}
+
+#sm_icon{
+    top:-95px;
+    left: 25px;
+    
+}
+
+
+#monito_icon{
+    top: -115px;
+    left: 50px;
+   
 }
 
 .letragrande{
@@ -138,4 +195,8 @@ header input{
 
 .colorazul{
     color:#4267b3;
+}
+
+.anniefont{
+    font-family: "Annie Use Your Telescope";
 }
