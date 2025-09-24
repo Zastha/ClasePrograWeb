@@ -16,6 +16,25 @@ body{
     max-width: 1024px;
 }
 
+
+
+footer article{
+    border: 1px solid red;
+    padding: 10px;
+    width: 30.1%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+footer img{
+    width: 300px;
+}
+
+hr{
+    border-style: dashed;
+    color: var(--color-linea);
+}
+
 header input{
     text-align: right;
 }
@@ -47,6 +66,7 @@ header nav ul li:nth-child(4){
 header nav ul li:nth-child(5){
     background: var(--color-linea) ;
 } 
+
 
 section article{
     height: 280px;
@@ -86,6 +106,16 @@ section,footer{
     background: var(--fondo-negro)
 }
 
+
+
+.tam-menu-lateral{
+    font-size: 1.1em;
+}
+
+.tam-tarjetas{
+    font-size:1.7em;
+}
+
 .letra-azul{
     color: var(--color-azul);
 }
@@ -100,6 +130,11 @@ section,footer{
 
 }
 
+
 .nito{
     font-weight: bold;
+}
+
+.read-more{
+    margin-left: 220px;
 }
