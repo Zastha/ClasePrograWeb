@@ -1,0 +1,47 @@
+/*Primero esta el orden HTML
+Segundo esta position Relative
+Tercero esta z-index*/
+body{
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+.acercade{
+    height: 500px;
+    margin: 80px auto;
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr) ;
+}
+
+.acercade_img{
+    height: 100%;
+    width: 100%;
+    grid-column:1/5;
+    grid-row: 1/5;
+    
+}
+
+.acercade_gradiente{
+    background-image: linear-gradient(to top, #0250C5 0%, #d43f8d 100%);
+    /*height: 100px;*/
+
+    grid-column: 2/6;
+    grid-row:2/7;
+}
+
+.acercade_article{
+    background-color: #FFF;
+    border: 1px solid #000000;
+    padding: 1.5em;
+    grid-column: 4/7;
+    grid-row: 3/6;
+    z-index: 0;
+}
+
+.acercade_titulo{
+    font-size: 2em;
+    margin-bottom:1em;
+}
