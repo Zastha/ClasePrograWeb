@@ -1,0 +1,83 @@
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+.contenedor > *{
+    
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Diseno: Mobile First*/
+.contenedor{
+    display: grid;
+    gap: 20px;
+    grid-template:
+    "header" 150px
+    "navbar" 50px
+    "main" 100px
+    "sidebar" 80px
+    "footer" 100px;
+}
+
+/*Media query*/
+/*Cuando el minimo de ancho
+ sea 1024px
+ Actualmente si se usan media queries
+ pero los frameworks los tienen escondidos*/
+@media(min-width:1024px){
+
+    .contenedor{
+        grid-template:
+        "header navbar" 300px
+        "sidebar main" 300px
+        "footer footer" 100px/
+        200px auto;
+    }
+
+}
+
+@media(min-width:1440px){
+
+    .contenedor{
+        grid-template:
+        "header header sidebar" 100px
+        "navbar main sidebar" 500px
+        "navbar footer ." 100px/
+        200px auto 200px;
+    }
+
+}
+
+.header{
+    grid-area:header;
+    background: purple;
+    
+}
+
+.navbar{
+    grid-area:navbar;
+    background-color: green;
+}
+
+.sidebar{
+    grid-area: sidebar;
+background-color: orange;
+}
+
+.main{
+    grid-area:main;
+background-color: blue;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: yellow;
+}
