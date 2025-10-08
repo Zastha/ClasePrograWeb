@@ -6,6 +6,15 @@ body{
     max-width: 723px;
 }
 
+.contenedor{
+    display:grid;
+    grid-template: 
+    "header header"
+    "navbar navbar"
+    "links principal"
+    "gaprogress principal"
+}
+
 .cubes{
     display: grid;
     grid-template-columns: repeat(4,minmax(140px,1fr));
@@ -51,6 +60,7 @@ header{
     background-color: #205c92;
     text-align: center;
     padding: 10px 0px;
+    grid-area: header;
 }
 .header img{
     width: 150px;
@@ -61,6 +71,8 @@ header{
     font-size: 0.6em;
     color: white;
     width: 150px;
+    grid-area: links;
+    
 }
 
 .links h4{
@@ -70,17 +82,22 @@ header{
     width: 100%;
 }
 
+
+
 .links img{
     width: 15px;
     vertical-align: middle;
+    
 }
 
 .linksexample{
     margin-left: 10px;
+    padding: 1px 0px;
 }
 
 .navbar{
     background: rgb(239,239,239) ;
+    grid-area: navbar;
     text-align: right;
     padding: 10px 5px;
 }
@@ -88,16 +105,82 @@ header{
 .navbar img{
     width:70px;
 }
+
+.panels{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(140px,1fr));
+    gap: 5px;
+    
+}
+
+.panels h4{
+    color:white;
+    font-size: 2em;
+    margin: 0px;
+    width: 100%;
+  
+}
+
+.panels article{
+    font-size: 0.6em;
+    color: lightgray;
+    
+    
+}
+
+.panels article:nth-child(1){
+    border: 1px solid rgb(171, 251, 254);
+   
+
+}
+
+.panels article:nth-child(2){
+    border: 1px solid rgb(255, 241, 195);
+    
+
+}
+
+.panels article:nth-child(3){
+    border: 1px solid rgb(254, 176, 216);
+    
+
+}
+
+.panels article img{
+    width: 150px;
+}
+
+.panels01porcentaje{
+    background-color: rgb(171, 251, 254) ;
+}
+
+.panels02porcentaje{
+    background-color: rgb(255, 241, 195) ;
+}
+
+.panels03porcentaje{
+    background-color: rgb(254, 176, 216) ;
+}
+
+.principal{
+    background-color: white;
+    grid-area: principal;
+    padding:5px;
+}
+
 .principaltitulos{
     color: rgb(174,174,174);
     font-size:0.6em;
 }
 .progress{
+    
     background: white;
     color:black;
     font-size: 0.6em;
     text-align: left;
     margin-top: 10px ;
+    grid-area: gaprogress;
 }
 
 .progress h4{
@@ -116,4 +199,29 @@ header{
 
 .progressbarra{
     width: 100%;
+}
+
+.usuarios{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.usuarios article{
+    background:rgb(74,106,174);
+    color: white;
+    padding: 10px;
+    vertical-align: top;
+    
+}
+
+.usuarios input{
+    background-color: rgb(91,180,224);
+    border: 1px solid rgb(91,190,224);
+    color: white;
+}
+
+.usuarios img{
+    width: 100px;
 }
