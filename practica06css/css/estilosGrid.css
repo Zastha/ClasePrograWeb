@@ -17,8 +17,8 @@ body{
     background-color: var(--color-negro);
     color: var(--color-blanco);
     padding: 10px 0px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+
 }
 
 .header img{
@@ -45,10 +45,6 @@ body{
 .help{
     height:200px;
     font-size: 2.5em;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     background-color: var(--fondo-ayuda);
 }
 
@@ -57,12 +53,11 @@ body{
     height: 50px;
     width:400px;
     
+    
 }
 
 .main{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
     gap: 60px;
     margin: 100px 50px;
 }
@@ -88,8 +83,7 @@ body{
 .footer{
     background-color: var(--color-negro);
     color:var(--color-blanco);
-    display: flex;
-    justify-content: space-evenly;
+
     
 }
 
@@ -98,11 +92,11 @@ body{
 }
 
 .footer-title{
-    font-weight: bold;
+
 }
 
 .copy-info{
-    align-self: flex-end;
+
 }
 .copy-info img{
     width: 30px;
