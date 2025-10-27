@@ -1,0 +1,34 @@
+@import "dom.css";
+
+body{
+    width: 250px;
+}
+
+article{
+    display: flex;
+    gap: 10px;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+input[type="text"]{
+    font-size: 1.1em;
+    height: 36px;
+    width: 300px;
+}
+#arrastra{
+    background: orange;
+    color: white;
+    font-size: 1.5em;
+    height: 250px;
+    text-align: center;
+    width: 250px;
+}
+#zonasoltar{
+    border: 3px dashed lightgray;
+    font-size: 1.5em;
+    height: 60px;
+    margin-top: 20px;
+    text-align: center;
+    width: 600px;
+}
