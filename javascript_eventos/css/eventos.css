@@ -24,11 +24,11 @@ input[type="text"]{
     text-align: center;
     width: 250px;
 }
-#zonasoltar{
+#zonainicial,#zonasoltar{
     border: 3px dashed lightgray;
     font-size: 1.5em;
-    height: 60px;
+    height: 250px;
     margin-top: 20px;
     text-align: center;
-    width: 600px;
+    width: 250x;
 }
