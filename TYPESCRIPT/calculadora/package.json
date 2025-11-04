@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "multiplica": "ts-node multiplicacion.ts",
+    "calculadora": "ts-node calculadora.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
