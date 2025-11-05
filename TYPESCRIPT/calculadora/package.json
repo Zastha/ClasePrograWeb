@@ -6,6 +6,7 @@
   "scripts": {
     "multiplica": "ts-node multiplicacion.ts",
     "calculadora": "ts-node calculadora.ts",
+    "define":"ts-node definiciones.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
