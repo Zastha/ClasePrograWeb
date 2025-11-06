@@ -6,7 +6,7 @@
   "scripts": {
     "multiplica": "ts-node multiplicacion.ts",
     "calculadora": "ts-node calculadora.ts",
-    "define":"ts-node definiciones.ts",
+    "define": "ts-node definiciones.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,6 +20,7 @@
   "type": "commonjs",
   "devDependencies": {
     "ts-node": "^10.9.2",
+    "tsc": "^2.0.4",
     "typescript": "^5.9.3"
   }
 }

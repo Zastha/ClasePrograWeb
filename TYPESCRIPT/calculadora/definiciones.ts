@@ -45,3 +45,47 @@ function usuarios(usuario:UsuarioRedes):void{
 usuarios({nombre:'Martin',tipo:TipoUsuario.Administrador,autoriza:true});
 
 usuarios({nombre:'Leonardo',tipo:TipoUsuario.Moderador,autoriza:true,ip:'192.168.1.4'});
+
+//Tipos que solo existen en TS
+let tiempo:number = 76_000_000;
+let animal:string = "dinosaurio";
+let extinto: boolean = true;
+//Tipo Any
+let mivariable;
+mivariable = "cadena"
+mivariable = 42;
+//Arreglos
+let animales:string[] = ['perro','gato','caballo'];
+let numeros1:number[] = [1,2,3,4,5,6];
+let atributos:boolean[] = []
+let numeros2: Array<number> = [1,2,3,4,5];
+//numeros1.map(x=>x.)
+//animales.map(x=>x.)
+//atributos.map(x=>x.)
+
+//tuplas
+let tupla:[number,string] = [1,'cadena',];
+tupla.push(12);
+let tupla2:[number,string[]] = [1,['cadena','cadena2','cadena3']];
+
+
+//enums
+const chica = 's'
+const mediana = 'm'
+const grande = 'l'
+const extragrande = 'xl'
+
+enum talla {Chica=1, Mediana, Grande, Extragrande};
+enum talla1 {
+Chica = 's',
+Mediana = 'm',
+ Grande = 'l',
+Extra = 'xl'
+}
+
+const tallaGrande = talla.Grande;
+console.log("Talla: "+tallaGrande);
+
+//Ponemos const para la enum
+const enum EstadoCargaPagina{Sininiciar, Cargando, Exito, Error}
+const estado:number = EstadoCargaPagina.Exito;
