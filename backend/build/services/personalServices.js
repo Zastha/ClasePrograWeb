@@ -5,7 +5,7 @@ const conexion = mysql.createPool({
     host: 'localhost',
     user: 'root',
     password: "",
-    database: 'pw12001200',
+    database: 'pw12001300',
 });
 export const obtienePersonal = async () => {
     try {
