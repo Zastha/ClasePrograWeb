@@ -2,7 +2,6 @@ import mysql from 'mysql2/promise';
 import { type Personal,type PersonalNuevo } from '../typesPersonal.js';
 import { personalSchema } from '../schema/personal.schema.js';
 
-
 const conexion = mysql.createPool({
   host: 'localhost',
   user: 'root',
