@@ -1,6 +1,6 @@
 import mysql from 'mysql2/promise';
 import {} from '../typesPersonal.js';
-import { personalSchema } from '../schema/personal.schema.js';
+import { personalSchema } from '../schema/personal.Schema.js';
 const conexion = mysql.createPool({
     host: 'localhost',
     user: 'root',
@@ -37,6 +37,7 @@ export const agregarPersonal = async (nuevo) => {
         return results;
     }
     catch (error) {
+        console.log(error);
         return { error: "No se puede agregar al personal." };
     }
 };
