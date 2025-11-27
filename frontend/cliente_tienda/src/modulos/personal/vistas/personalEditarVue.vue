@@ -1,33 +1,33 @@
 <template>
-    <div class="container mt-5">
+    <div class="container mt-5" v-if="personal[0]">
         <div class="card">
             <div class="card">
                 <div class="card-header">
-                    <h4>Agregar Personal</h4>
+                    <h4>Editar Personal</h4>
                 </div>
                 <div v-if ="mensaje == 1" class="alert alert-success" role="alert">
-                    Datos agregados con exito
+                    Datos actualizados con exito
                 </div>
                 <div class="card-body">
                     <div class="mb-3">
                         Nombre
-                        <input type="text" class="form-control" v-model="personal.nombre">
+                        <input type="text" class="form-control" v-model="personal[0].nombre">
                     </div>
                     <div class="mb-3">
                         Direccion
-                        <input type="text" class="form-control" v-model="personal.nombre">
+                        <input type="text" class="form-control" v-model="personal[0].nombre">
                     </div>
                     <div class="mb-3">
                         Telefono
-                        <input type="text" class="form-control" v-model="personal.nombre">
+                        <input type="text" class="form-control" v-model="personal[0].nombre">
                     </div>
                     <div class="mb-3">
                         Estatus
-                        <input type="text" class="form-control" v-model="personal.nombre">
+                        <input type="text" class="form-control" v-model="personal[0].nombre">
                     </div>
                     <div class="mb-3">
                         
-                        <button class="btn btn-primary" @click="agregarPersonal(personal)">
+                        <button class="btn btn-primary">
                             Agregar
                         </button>
                     </div>
@@ -39,17 +39,19 @@
 </template>
 
 <script setup lang="ts">
-    import {ref} from 'vue';
+    import {onMounted, ref} from 'vue';
+    import { useRoute } from 'vue-router';
     import type { PersonalAgregar } from '../interfaces/personal-interfaces';
     import { usePersonal } from '../controladores/usePersonal';
-    const {agregarPersonal,mensaje} = usePersonal();
-
-    let personal = ref<PersonalAgregar>({
-        nombre:'',
-        direccion:'',
-        telefono:'',
-        estatus:0
+    const {traePersonaID,personal,mensaje} = usePersonal();
+    let idPersona = 0
+    const route = useRoute();
+    onMounted(async () =>{
+        idPersona =  Number(route.params.id);
+        await traePersonaID(idPersona);
     })
+
+
 </script>
     
 <style scoped>

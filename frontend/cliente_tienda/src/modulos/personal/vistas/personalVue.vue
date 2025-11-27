@@ -17,6 +17,7 @@
             <th>Direccion</th>
             <th>Telefono</th>
             <th>Estatus</th>
+            <th></th>
         </thead>
     <tbody>
         <tr v-for="persona in personal" :key="persona.id"> 
@@ -25,6 +26,21 @@
             <td>{{ persona.direccion }}</td>
             <td>{{ persona.telefono }}</td>
             <td>{{ persona.estatus }}</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn btn-sm btn-outline-primary">
+                        <routerlink class="nav-link item" :to="{path: '/personal/'+persona.id+'/editar'}">
+                            <i class="fa fa-pencil"></i>
+                        </routerlink>
+                        </button>
+
+                        <button type="button" class="btn btn-sm btn-outline-danger">
+                        <routerlink class="nav-link item" :to="{path: '/personal/'+persona.id+'/borrar'}">
+                            <i class="fa fa-thrash"></i>
+                        </routerlink>
+                        </button>
+                </div>
+            </td>
         </tr>
     </tbody>
     </table>
